@@ -1,0 +1,60 @@
+body {
+    margin: 0px; /* Resetear margenes */ 
+    padding: 0px; /* Resetear rellenos */ 
+    background-color: #282b2f; /* Color de fondo */ 
+}
+
+nav {
+    position: absolute; /* Posicionar elemento fijado en la página */
+	top: 50%; /* Distancia al 50% de la parte superior */
+	left: 50%; /* Distancia al 50% de la parte izquierda */
+	transform: translate(-50%, -50%); /* Trasladar posición al 50% del elemento */
+	background-color: #808080; /* Color del fondo */
+	height: 40px; /* Altura */
+	border-radius: 40px; /* Redondear bordes */
+	padding: 10px; /* Relleno */
+    
+}
+
+nav:hover > input { /* Al poner el ratón sobre enlace, pasa de 0 pixeles a 5 pixeles */
+    width: 250px; 
+    padding: 0px 5px; 
+    
+}
+
+nav:hover > a { /* Cambiar color de la lupa al poner el ratón encima */
+    background-color: #ffffff; 
+    
+}
+
+a { 
+    color: #282b2f; /* Color */
+	float: right; /* Objeto a la derecha */
+	width: 40px; /* Anchura */
+	height: 40px; /* Altura */
+	border-radius: 50%; /* Redondear bordes */
+    background-color: #808080; /* Color de fondo */
+    display: flex; /* Objeto flexible */
+    justify-content: center; /* Alinear contenido horizontalmente */
+	align-items: center; /* Centrar verticalmente */
+	text-decoration: none; /* Quitar decoraciones al texto */
+    
+}
+
+input {
+    border: none; /* Quitar bordes */
+	background: none; /* Sin color de fondo */
+	outline: none; /* Eliminar linea exterior al seleccionar la casilla */
+	float: left; /* Objeto a la izquierda */
+	padding: 0px; /* Relleno */
+	color: #ffffff; /* Color */
+	font-size: 16px; /* Tamaño de la letra */
+	transition: 1s; /* Transición de tiempo */
+	line-height: 40px; /* Altura entre líneas */
+	width: 0px; /* Reducir la anchura para que solo quede la lupa */
+    
+}
+
+::-webkit-input-placeholder { 
+	color: #ffffff;
+}

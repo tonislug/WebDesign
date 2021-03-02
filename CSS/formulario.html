@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <link rel="stylesheet" href="formulario.css">
+        <title>Formulario - Iniciar sesión</title>
+    </head>
+    <body>
+        <form>
+            <label class="descripcion" form="usuario">Nombre de usuario: <br></label>
+            <input class="entrada" type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" patern="[0-9]{8}[A-Z]{1}" title="DNI - Ej: 12345678A"><br>
+            <label class="descripcion" for="password">Contraseña: <br></label>
+            <input class="entrada" type="password" id="password" name="password" placeholder="Introduce tu contraseña" minlength="12" title="Contraseña - Mínimo 12 digitos"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

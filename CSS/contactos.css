@@ -1,0 +1,132 @@
+* {
+    margin: 0px; /* Margenes */
+    padding: 0px; /* Relleno */ 
+    box-sizing: border-box; /* Anchura de caja */
+    font-family: "Poppins", sans-serif; /* Fuente */
+}
+
+body {
+    margin: 0px; /* Margenes */
+    padding: 0px; /* Relleno */ 
+    font-family: "Poppin", sans-serif;
+    min-height: 100vh;
+    background: url(fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacion {
+    color: #ffffff;
+    max-width: 500px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+#informacion i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+#formulario {
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+#informacion #formulario {
+    flex: 1;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.texto {
+    background-color: #000000; 
+    color: #ffffff; 
+    border: none; 
+    outline: none; 
+    width: calc(50% - 3px); /* Dividir la tabla en dos partes */
+    height: 50px; 
+    padding: 10px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px; 
+    opacity: 90%; 
+    
+}
+
+.texto:first-child {
+    margin-right: 15px;
+}
+
+textarea {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    opacity: 90%;
+}
+
+#boton {
+    float: right;
+    background-color: #2e94e3;
+    color: #ffffff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+#boton:hover {
+    background-color: #0582e2;
+}
+
+@media screen and (max-width: 950px) {
+    section {
+        flex-direction: column;
+    }
+    
+    #informacion, #formulario {
+        margin: 30px 50px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    #nombre, #correo {
+        width: 100%;
+    }
+}

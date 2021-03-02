@@ -1,0 +1,86 @@
+    /* Selector universal formateo de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    /* Color del fondo */
+    background-color: black;
+}
+
+h1 {
+    /* Color de la letra */
+    color: white;
+    /* Color del fondo */
+    background-color: darkviolet;
+    /* Alineacion de texto centrado */
+    text-align: center;
+    /* Tamaño de la letra */
+    font-size: 75px;
+    /* Estilo de la letra */
+    font-family: monospace;
+    /* Espaciado alrededor de una etiqueta (Relleno) */
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-style: dashed;
+    border-color: black;
+    
+}
+
+h2 {
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 60px;
+    font-family: monospace;
+    margin-left: 50px;
+    
+}
+
+p {
+    color:white;
+    background-color: red;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Atributo id */
+#parrafo1 {
+    color:white;
+    font-size: 35px;
+    background-color: darkmagenta;
+    margin-top: 75px;
+    margin-right: 50px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+    
+}
+
+/* Atributo class */
+.parrafo2 {
+    color: white;
+    font-family: monospace;
+    background-color: darkblue;
+    font-size: 35px;
+    margin-top: 75px;
+    margin-right: 50px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+body {
+    margin: 0px; /* Margen */
+    margin-top: -25px;
+    padding: 0px; /* Relleno */
+    font-family: "Andika New Basic"; /* Fuente de la letra */
+    background-image: url(fondo3.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#checkbox:checked ~ nav {
+    left: -200px;
+}
+
+#checkbox:checked ~ nav .texto {
+    display: none;
+}
+
+#checkbox:checked ~ nav span {
+    font-size: 24px;
+    margin-left: 145px;
+}
+
+header {
+    margin: 0px; /* Margen */
+    padding: 20px; /* Relleno */
+    width: 100%; /* Anchura */
+    background-color: #282b2f /* Color de fondo */
+}
+
+header label .material-icons {
+    color: #faebd7;
+    font-size: 30px;
+    position: fixed;
+    left: 110px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+h3 {
+    margin: 0px; /* Margen */
+    color:#faebd7; /* Color de la letra */
+    font-size: 30px; /* Tamaño de la letra */
+    font-weight: bold; /* Letra en negrita */
+    text-align: center; /* Centrar texto */
+    text-transform: uppercase /* Letras mayusculas */
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #faebd7;
+    text-align: center;
+}
+
+header #cerrar {
+    margin-top: -40px; 
+    margin-right: 50px; 
+    padding: 5px; 
+    color: #faebd7; 
+    background-color: #4f81c5;
+    border-radius: 15px;  /* Redondear esquinas */  
+    font-size: 15px; 
+    font-weight: bold; 
+    text-decoration: none; /* Quitar subrayado */
+    float: right; /* Mover enlace hacia la derecha */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+header #cerrar:hover { /* Cambiar color cuando el ratón pasa por encima */
+    background-color: #64a0aa;
+    color: #282b2f;
+}
+
+nav {
+    margin-top: 0px; 
+    padding-top: 25px; 
+    width: 250px; 
+    height: 100%; 
+    background-color: #282b2f; 
+    position: fixed; /* Posición fija */
+    
+}
+
+nav a {
+    padding-left: 70px;
+    text-decoration: none; /* Quitar subrayado */
+    color: #faebd7;
+    width: 100%;
+    display: block;
+    line-height: 40px; /* Separacion de lineas */
+    box-sizing: border-box; /* Anchura de caja */
+    transition-property: background-color; /* Propiedad de transición */
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: #64a0aa; /* La propiedad de transición enlaza con la propiedad background-color */
+    color: #282b2f;
+}
+
+nav a span {
+    padding-right: 5px;
+    vertical-align: middle; /* Alinear imagen con el texto */
+    padding-bottom: 3px;
+    
+}
+
+#perfil {
+    margin-right: auto; /* Margen derecho */
+    margin-bottom: 20px; /* Margen de abajo */ 
+    margin-left: auto; /* Margen izquierdo */
+    width: 150px;
+    height: 150px;
+    border-radius: 100px; 
+    display: block;
+    
+}
+

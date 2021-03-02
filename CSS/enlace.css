@@ -1,0 +1,44 @@
+/* Enlace no visitado */ 
+a:link {
+    color: fuchsia;
+    text-decoration: none;
+    background-color: darkblue;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: progress;
+}
+
+/* Enlace visitado */
+a:visited {
+    color: yellow;
+    text-decoration: none;
+    background-color: aqua;
+    padding: 10px 20px;
+    
+}
+
+/* Enlace con raton sobre enlace */
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: beige;
+    padding: 10px 20px;
+    
+}
+
+/* Enlace en el momento de hacer click */
+a:active {
+    color: green;
+    text-decoration: underline;
+    background-color: chocolate;
+    padding: 10px 20px;
+    
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    font-size: 50px;
+    line-height: 3.5;
+    
+}

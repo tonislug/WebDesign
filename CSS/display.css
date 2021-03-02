@@ -1,0 +1,14 @@
+a {
+    display: block; 
+}
+
+p {
+    display: inline; 
+}
+
+span {
+    display: inline-block; 
+    width: 100px; 
+    height: 100px; 
+    background-color: yellow; 
+}

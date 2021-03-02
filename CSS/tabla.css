@@ -1,0 +1,30 @@
+div {
+    overflow-y: auto; /* Barra de desplazamiento */
+}
+
+table, tr, th, td {
+    border: 2px solid black; /* Crear un bordeado */
+    border-collapse: collapse; /* Eliminar lineas dobles */
+    width: 1200px; /* Anchura */
+    height: 100px; /* Altura */
+}
+
+tr:hover {
+    background-color: blueviolet;
+}
+
+tr:nth-child(even) { /* Muestra tabla en rayas como una cebra */
+    background-color: gold;
+}
+
+th {
+    height: 100px; /* Altura */ 
+    font-size: 20px; /* Tamaño de la letra */
+    background-color: blue;
+    color: white;
+}
+
+td {
+    text-align: center; /* Alineación de texto horizontal */
+    vertical-align: middle; /* Alineación de texto vertical */
+}

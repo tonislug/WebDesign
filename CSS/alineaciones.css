@@ -1,0 +1,62 @@
+#centrado {
+    border: 3px solid black; 
+    padding: 10px; 
+    width: 60%; 
+    margin: auto; 
+    text-align: center; 
+}
+
+#imagen1 {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#derecha {
+    border: 3px solid black;
+    padding: 10px; 
+    width: 300px; 
+    position: absolute; /* Posicion absoluta en la pagina */
+    /* position: fixed; Posicion fija en la pantalla */
+    right: 10px; 
+}
+
+#sticky {
+    width: 300px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+#agrandar {
+    padding-bottom: 200px;
+    padding-right: 600px;
+}
+
+#w3css {
+    position: relative;
+    left: 10px;
+    bottom: 100px;
+    z-index: -1;
+}
+
+#contenedor {
+    position: relative;
+}
+
+#costa {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+
+#texto {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+

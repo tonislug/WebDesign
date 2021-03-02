@@ -1,0 +1,63 @@
+* { 
+    margin: 0px; /* Resetear margenes */
+    padding: 0px; /* Resetear rellenos */ 
+}
+
+body { 
+    margin: 0px; /* Resetear margenes */
+    padding: 0px; /* Resetear rellenos */ 
+    background-size: cover; /* Ampliar a toda la pantalla */
+    background-image: url(fondo2.jpg); /*Ponemos imagen de fondo */
+    background-attachment: fixed; /* Dejamos la imagen fija sin desplazamiento */
+    font-family: sans-serif; /* Fuente de letra */
+    font-size: 18px; /* Tamaño de la letra */
+    font-weight: bold; /* Letra en negrita */
+}
+
+body nav { 
+    margin-top: 20px; /* Margen superior */
+    margin-right: auto; /* Margen derecho */
+    margin-bottom: 20px; /* Margen inferior */
+    margin-left: auto; /* Margen izquierda */
+    padding: 0px; /* Relleno */
+    width: 850px; /* Anchura de nav */
+}
+
+body nav ul li { 
+    margin: 0px; /* Resetear margenes */
+    margin-right: 5px; /* Margen derecho */
+    padding: 0px; /* Resetear rellenos */ 
+    width: 200px; /* Anchura */
+    height: 40px; /* Altura */
+    float: left; /* Alinear elementos de la lista */
+    background-color: #000000; /* Color de fondo */
+    border-radius: 5px; /* Redondear bordes */
+    opacity: 80%; /* Opacidad del fondo */
+    list-style: none; /* Eliminar viñeta de las listas */
+    
+}
+
+body nav ul li a { 
+    margin: 0px; /* Resetear margenes */
+    padding: 0px; /* Resetear rellenos */ 
+    display: block; /* Bloquear contenidos */
+    line-height: 40px; /* Altura de separación entre líneas */
+    text-align: center; /* Alineación del texto */
+    color: #ffffff; /* Color de la letra */
+    text-decoration: none; /* Eliminar linea de subrayado */
+    transition: 0.5s; /* Tiempo de transición */
+    transition-property: background-color; /* Enlaza con :hover para coger el color */
+}
+
+body nav ul li a:hover { /* Funciona al situar el ratón sobre el elemento */
+    background-color: #0000ff; /* Color de fondo */
+    border-radius: 5px; /* Redondear bordes */
+}
+
+body nav ul li ul li { 
+    display: none; /* No mostrar estos elementos en pantalla */
+}
+
+body nav ul li:hover ul li { 
+    display: block; /* Mostrar los elementos escondidos al poner el ratón encima */
+}

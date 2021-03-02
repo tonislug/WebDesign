@@ -1,0 +1,79 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: url("https://p4.wallpaperbetter.com/wallpaper/756/689/77/asian-thai-food-wood-eggs-onion-chilli-peppers-cat-dog-nature-lunch-breakfast-cook-cooking-kitchen-wallpaper-preview.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed; 
+}
+
+header {
+    margin: 0px; /* Margen */
+    padding: 20px; /* Relleno */
+    width: 100%; /* Anchura */
+    background-color: #282b2f /* Color de fondo */
+}
+.cabecero {
+	margin: 0px; /* Margen */
+    color: white; /* Color de la letra */
+    font-size: 20px; /* Tamaño de la letra */
+    text-align: center; /* Centrar texto */
+    margin: auto; /* Centramos los elementos */
+	overflow: hidden; /* Eliminamos errores de float */
+}
+
+.logo {
+	margin-right: 1200px;
+	margin-top: 20px;
+	font-size: 50px; 
+	font-style: italic;
+}
+
+nav #opciones {
+	margin-top: 0px;
+	color: white;
+	text-decoration: none;
+}
+
+header #boton {
+	background-color: white;
+	margin-top: -50px;
+	margin-right: 50px;
+	float: right;
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+
+h1 {
+	margin-left: 400px;
+	margin-top: 200px;
+	font-size: 100px;
+	color: white;
+  	padding: 10px;
+  	text-shadow: 10px 10px 10px black;
+}
+
+p {
+	color: white;
+	margin-left: 450px;
+	text-shadow: 10px 10px 10px black;
+}
+
+span {
+	color: white;
+	margin-left: 650px;
+	text-shadow: 10px 10px 10px black
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	margin-top: -50px;
+}
+

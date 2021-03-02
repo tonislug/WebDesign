@@ -1,0 +1,29 @@
+#direccion {
+    direction: rtl; /* ltr rtl */
+    unicode-bidi: bidi-override;
+}
+
+#alineacion {
+    text-align: left; /* left right center justify */
+    vertical-align: middle; /* top middle bottom */
+}
+
+#decoracion {
+    color: black;
+    text-decoration: line-through; /* overline line-through underline none */
+}
+
+#transformacion{
+    text-transform: capitalize; /* uppercase lowercase capitalize */
+}
+
+#espaciado {
+    text-indent: 50px; /* Sangría */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    line-height: 25px; /* Altura entre lineas */
+    word-spacing: 25px; /* Espaciado entre palabras */
+}
+
+#sombra {
+    text-shadow: 2px 2px 4px red;
+}
