@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="iso-8859-1"/>
+        <title>Graficos en HTML</title>
+        <style>
+            body {
+                background-color:blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Circulo -->
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="95" stroke="black" stroke-width="10" fill="red"></circle>
+        </svg>
+        
+        <!-- Rectangulo o cuadrado -->
+        <svg width="500" height="500">
+            <rect x="95" y="95" rx="10" ry="10" width="200" height="200" stroke="black" stroke-width="10" fill="blue" opacity="1" stroke-opacity="1">
+            </rect>
+        </svg>
+        
+        <!-- Elipse -->
+        <svg width="500" height="500">
+            <ellipse cx="250" cy="60" rx="220" ry="50" stroke="black" fill="green"/>
+            
+            <ellipse cx="250" cy="90" rx="190" ry="30" stroke="black" fill="yellow"/>
+            
+            <ellipse cx="250" cy="120" rx="160" ry="20" stroke="black" fill="pink"/>
+        </svg>
+        
+        <svg width="500" height="500">
+            <ellipse cx="250" cy="250" rx="250" ry="150" fill="green"/>
+            <ellipse cx="250" cy="250" rx="180" ry="100" fill="black"/>
+        </svg>
+        
+        <!-- Línea -->
+        <svg width="500" height="500">
+            <line x1="10" y1="10" x2="400" y2="350" stroke="black" stroke-width="10"/>
+        </svg>
+        
+        <!-- Polilinea -->
+        <svg width="500" height="500">
+            <polyline points="0,40 40,40 40,80 80,80, 80,120 120,120 120,160 160,160 160,200 200,200 " stroke="black" stroke-width="4" fill="white"/>
+        </svg>
+         
+        <!-- Poligonos -->
+        <svg width="500" height="500">
+                <polygon points="200,50 150,200 350,100 100,100 350,200" stroke="pink" stroke-width="4" fill="white" fill-rule="evenodd"/>
+        </svg>
+        
+        <!-- Ruta 
+        M - Moverse a
+        L - Linea a
+        H - Linea horizontal a 
+        V - Linea vertical a
+        C - Curva a
+        S - Curva suave a
+        Q - Curva de Bézier cuadrática
+        T - Curva de Bézier cuadrática suave
+        A - Arco eliptico
+        Z - Camino cercano
+        -->
+        <svg width="500" height="500">
+            <path d="M10 100 L300 100 L300 300 Z " stroke="black" stroke-width="5" fill="none"/>
+        </svg>
+            
+        <!-- Texto -->
+        <svg width="500" height="500">
+            <text x="200" y="200" transform="rotate(-90 200,200)" fill="black">Primer texto SVG </text>
+        </svg>
+        
+        <!-- Varias lineas de texto -->
+        <svg width="500" height="500">
+            <text x="200" y="20">Primera linea
+                <tspan x="200" y="40">Segunda linea</tspan>
+                <tspan x="200" y="60">Tercera linea</tspan>
+            </text>
+        </svg>
+        
+        <!-- Añadir un enlace o hipervinculo al texto -->
+        <svg width="500" height="500">
+            <a href="https://www.google.es">
+                <text x="40" y="60">Enlace a Google</text></a>
+        </svg>
+        
+        <!-- Filtros para graficos -->
+        <!-- Desenfoque -->
+        <svg width="500" height="500">
+            <defs>
+                <filter id="filtro1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="85"/>
+                </filter>
+            </defs>
+            <rect x="100" y="100" width="200" height="200" fill="pink" filter="url(#filtro1)"/>
+        </svg>
+        
+        <svg width="500" height="500">
+            <defs>
+                <filter id="filtro2">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+                </filter>
+            </defs>
+            <circle cx="200" cy="200" r="100" fill="red" filter="url(#filtro2)"/>
+        </svg>
+        
+        <svg width="100" height="100" style="border:1px solid black">
+            <rect width="100" height="100" style="fill:rgb(120,120,255);" />
+            <circle cx="50" cy="50" r="10" style="fill: transparent; stroke:white; stroke-width:2;">
+                <animate attributeName="r" begin="0s" dur="2s" values="1; 20" repeatCount="indefinite" />
+                <animate attributeName="stroke-opacity" begin="0s" dur="2s"
+             values="1; 0" repeatCount="indefinite" />
+            </circle>
+        </svg>
+        
+        <!-- Degradado lineal -->
+        <svg width="500" height="500">
+            <defs>
+                <linearGradient id="degradadolineal"
+                x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:red;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:yellow;stop-opacity:1"/>
+                </linearGradient>
+            </defs>
+                <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#degradadolineal)"/>
+        </svg>
+        
+        <!-- Degradado radial -->
+        <svg width="500" height="500"> 
+            <defs>
+                <radialGradient id="degrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:0"/>
+                    <stop offset="100%" style="stop-color:blue;stop-opacity:1"/>
+                </radialGradient>
+            </defs>
+                <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#degrad)"/>
+                <text fill="black" font-size="24" font-family="Verdana" x="165" y="80">
+                    Texto
+                </text>
+            
+        </svg>
+    </body>
+</html>

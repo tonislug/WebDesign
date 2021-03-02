@@ -1,0 +1,1 @@
+document.getElementById("exterior").innerHTML = "Hola mundo";

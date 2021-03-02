@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="iso-8859-1"/>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <!-- Formulario basico -->
+        <form>
+            
+        <!-- Nombre -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <hr>
+            
+        <!-- Correo -->
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo"><br>
+            <hr>
+            
+        <!-- Genero -->
+            <label for="genero">Sexo:</label><br>
+            <input type="radio" id="genero" name="genero">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="genero" name="genero">
+            <label for="femenino">Femenino</label><br>
+            <hr>
+            
+        <!-- Fecha de nacimiento -->
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+            <hr>
+            
+        <!-- Fecha con hora -->
+            <label for="hfecha">Fecha y hora:</label><br>
+            <input type="datetime-local" id="hfecha" name="hfecha"><br>
+            <hr>
+            
+        <!-- Telefono -->
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono"><br>
+            <hr>
+            
+        <!-- Adjuntar un archivo -->
+            <label for="fotografia">Foto:</label><br>
+            <input type="file" id="fotografia" name="fotografia"><br>
+            <hr>
+            
+        <!-- Contraseña -->
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <hr>
+            
+        <!-- Boton -->
+            <input type="submit"><hr>
+            <input type="button" value="Guardar"><br>
+            <hr>
+            
+        <!-- Boton de reset -->
+            <input type="reset" value="Borrar"><br>
+            <hr>
+            
+        <!-- Rango -->
+            <label for="rango_manual">Ajuste:</label><br>
+            <input type="range" min="0" max="10" step="1" id="rango_manual" name="rango_manual"><hr>
+            <input type="range" id="rango_manual" name="rango_manual"><hr>
+            
+        <!-- Hora, semana y mes por separado -->
+            <label for="hora">Hora:</label><br>
+            <input type="time" id="hora" name="hora"><br>
+            <label for="semana">Semana:</label><br>
+            <input type="week" id="semana" name="semana"><br>
+            <label for="mes">Mes:</label><br>
+            <input type="month" id="mes" name="mes"><br>
+            <hr>
+            
+        <!-- Elegir color -->
+            <label for="color">Elegir color:</label><br>
+            <input type="color" id="color" name="color"><br>
+            <hr>
+            
+        <!-- Lista desplegable -->
+            <label for="comida">Frutas:</label>
+            <select id="comida" name="comida">
+                <option value="Manzana">Manzana</option>
+                <option value="Piña">Piña</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Fresa">Fresa</option>
+            </select>
+            <input type="submit" value="Enviar"><br>
+            <hr>
+            
+        <!-- Lista con valores visibles -->
+            <label for="marcas">Marcas:</label>
+            <select id="marcas" name="marcas" size="2">
+                <option value="Adidas">Adidas</option>
+                <option value="Nike">Nike</option>
+                <option value="Reebook">Reebook</option>
+                <option value="Fila">Fila</option>
+            </select>
+            <input type="submit" value="Enviar"><br>
+            <hr>
+            
+        <!-- Elegir varias opciones de una lista desplegable -->
+            <label for="coches">Coches:</label>
+            <select id="coches" name="coches" size="4" multiple>
+                <option value="Renault">Renault</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Seat">Seat</option>
+                <option value="Citroen">Citroen</option>
+            </select>
+            <input type="submit" value="Enviar"><br>
+            <hr>
+            
+        <!-- Escribir texto en un formulario -->
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" rows="20" cols="40">Deja aqui tu comentario...</textarea><br>
+            <input type="submit" value="Enviar"><br>
+            <hr>
+            
+        <!-- Lista de opciones predefinidas -->
+            <label for="routers">Routers:</label>
+            <input list="routers" name="routers">
+                <datalist id="routers">
+                    <option value="Cisco">
+                    <option value="TP-Link">
+                    <option value="D-Link">
+                    <option value="Asus">
+                </datalist>
+            <input type="submit" value="Enviar">
+            <hr>
+            
+        <!-- Agrupaciones de datos -->
+            <fieldset>
+                <legend>Deportes:</legend>
+                <label for="pelota">Deportes con pelota:</label><br>
+                <input type="pelota" name="pelota">
+                    <datalist id="pelota">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Baloncesto">Baloncesto</option>
+                        <option value="Tenis">Tenis</option>
+                        <option value="Beisbol">Beisbol</option>
+                    </datalist>
+                <input type="submit" value="Enviar">
+                <hr>
+                <label for="acuaticos">Deportes acuaticos:</label><br>
+                <input type="acuaticos" name="acuaticos">
+                    <datalist id="acuaticos">
+                        <option value="Waterpolo">Waterpolo</option>
+                        <option value="Piragüismo">Piragüismo</option>
+                        <option value="Natación">Natación</option>
+                        <option value="Rafting">Rafting</option>
+                    </datalist>
+                <input type="submit" value="Enviar">
+            </fieldset>
+            
+        <!-- Checkbox: Elección de 0 a variasopciones -->
+            <label for="transporte">Medio de transporte: </label><br>
+            <input type="checkbox" id="coche" value="coche">
+            <label for="coche">Coche</label><br>
+            <input type="checkbox" id="pie" value="pie">
+            <label for="pie">A pie</label>
+            
+        </form>
+    </body>
+</html>

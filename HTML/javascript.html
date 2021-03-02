@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="iso-8859-1"/>
+        <title>JavaScript</title>
+        <script src="FuncionSustituir.js">
+        </script>
+    </head>
+    <body>
+    <!-- JavaScript en el mismo documento HTML -->
+        <p id="prueba"></p>
+        <script>
+            document.getElementById("prueba").innerHTML = "Hola mundo";
+        </script>
+        
+    <!-- JavaScript en un documento aparte -->
+        <h1 id="exterior"></h1>
+        <script src="exterior.js"></script>
+        
+    <!-- JavaScript con boton para sustituir texto -->
+        <p id="sustituir">Parrafo original</p>
+        <button type="button" onclick="FuncionSustituir()">Pruébalo</button>
+        
+    </body>
+</html>

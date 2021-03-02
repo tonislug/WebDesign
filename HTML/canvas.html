@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="iso-8859-1"/>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <canvas id="prueba" width="200" height="200" style="border: 1px solid;"></canvas>
+        
+        <script>
+            var canvas = document.getElementById("prueba");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "red"; 
+            ctx.fillRect(0, 0, 200, 100);
+        </script>
+        
+        <script>
+            var canvas = document.getElementById("prueba");
+            var ctx = canvas.getContext("2d");
+            ctx.moveTo(100, 200);
+            ctx.lineTo(100, 150);
+            ctx.stroke();
+        </script>
+        
+        <script>
+            var canvas = document.getElementById("prueba");
+            var ctx = canvas.getContext("2d");
+            ctx.moveTo(100, 0);
+            ctx.lineTo(100, 50);
+            ctx.stroke();
+        </script>
+        
+        <script>
+            var canvas = document.getElementById("prueba");
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
