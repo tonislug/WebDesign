@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Bootstrap 4</title>
+    </head>
+    <body>
+
+        <!--Padding-->
+        <div class="container p-4 bg-danger">
+            <h1>Contenedor ancho fijo sensible</h1>
+        </div>
+
+        <!--Padding para distintos tipos de pantalla-->
+        <div class="container-fluid p-sm-2 p-md-4 p-lg-5 bg-warning">
+            <h1>Contenedor ancho completo</h1>
+        </div>
+
+        <!--Borde y margen superior e inferior-->
+        <div class="container border mt-5 mb-5 border-success border-5 rounded">
+            <h1>Contenedor con borde</h1>
+        </div>
+
+        <!--Color de fondo y texto blanco-->
+        <div class="container-fluid bg-primary text-white">
+            <h1>Contenedor ancho completo color de fondo</h1>
+        </div>
+        <div class="container-fluid">
+            <p class="font-weight-bold text-center text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <span class="text-secondary">Ratione</span> ducimus minima mollitia earum hic, illo repellat ipsum. 
+                Enim veritatis tempora, ipsa, officiis facilis totam et natus exercitationem ipsam, voluptatem in?</p>
+        </div>
+
+        <!--Pantalla pequeña-->
+        <div class="row">
+            <div class="col-sm-12 bg-success">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Rerum perferendis voluptatum eos hic adipisci consequuntur omnis, 
+                    vitae quisquam impedit nulla cum perspiciatis enim beatae porro harum vero, 
+                    magnam deleniti similique?</p>
+            </div>
+        </div>
+
+        <!--Pantalla mediana-->
+        <div class="row">
+            <div class="col-md-6 bg-warning">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Similique itaque voluptas accusantium est odit nesciunt impedit. 
+                    In fugit adipisci dolore commodi est, nulla tempora aut quo, delectus, ab dolorem ex!</p>
+            </div>
+            <div class="col-md-6 bg-danger">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quaerat voluptatum iusto obcaecati quia soluta doloribus omnis unde 
+                    dolor autem similique inventore recusandae dolore, nesciunt consectetur illum, 
+                    voluptate error fugiat officia!</p>
+            </div>
+        </div>
+
+        <!--Pantalla grande-->
+        <div class="row">
+            <div class="col-lg-3 bg-primary">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempore, corporis voluptas, vel atque numquam itaque voluptates commodi, 
+                    illum aspernatur odio quis officia et aperiam vitae sunt veniam cupiditate excepturi? Commodi!</p>
+            </div>
+            <div class="col-lg-6 bg-secondary">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Nesciunt soluta aperiam dignissimos culpa facere ipsum tenetur, 
+                    tempora molestias laboriosam vitae deserunt perferendis consectetur consequatur. 
+                    Optio quo repudiandae consectetur unde dicta!</p>
+            </div>
+            <div class="col-lg-3 bg-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui voluptatum, repellendus placeat fuga cumque autem soluta unde. 
+                    Molestias reprehenderit, officia dolore sapiente placeat eveniet accusantium, 
+                    recusandae ut, neque nesciunt cumque!</p>
+            </div>
+        </div>
+
+        <!--Tabla responsive-->
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-info">
+                        <td>Sergio</td>
+                        <td>Martinez</td>
+                        <td>Sergio</td>
+                        <td>Martinez</td>
+                        <td>Sergio</td>
+                        <td>Martinez</td>
+                        <td>Sergio</td>
+                        <td>Martinez</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Maria</td>
+                        <td>Espinosa</td>
+                        <td>Maria</td>
+                        <td>Espinosa</td>
+                        <td>Maria</td>
+                        <td>Espinosa</td>
+                        <td>Maria</td>
+                        <td>Espinosa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Alertas de Bootstrap-->
+        <div class="container">
+            <div class="alert  alert-success alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success </strong>Esto es una caja de alerta de <a href="#" class="alert-link">positiva</a>.
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Danger </strong>Esto es una caja de alerta de <a href="#" class="alert-link">peligro</a>.
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button type="button" class="btn btn-outline-danger text-dark " disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Basico</button>
+            <button type="button" class="btn btn-primary btn-lg active">
+                <span class="spinner-grow"></span>
+                Color</button>
+            <a href="https://www.google.es" class="btn btn-secondary btn-block" role="button">Google</a>
+        </div>
+
+        <!--Agrupación de botones-->
+        <div class="btn-group-lg">
+             <button type="button" class="btn btn-warning">Oro</button>
+             <button type="button" class="btn btn-success">Hierba</button>
+              <button type="button" class="btn btn-danger">Sangre</button>
+        </div>
+
+        <!--Agrupación de botones desplegables-->
+        <div class="btn-group-vertical btn-group-lg">
+            <button type="button" class="btn btn-warning">Oro</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Hierba</button>
+                <div class="dropdown-menu">
+                    <button class="btn btn-success dropdown-item">Verde</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger">Sangre</button>
+       </div>
+       <div class="btn-group">
+           <button type="button" class="btn btn-primary">TV</button>
+           <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Sharp</a>
+                <a href="#" class="dropdown-item">Toshiba</a>
+            </div>
+       </div>
+
+       <!--Insignias-->
+       <div class="container">
+           <h3>Bandeja de entrada<span class="badge badge-info"> 4</span></h3>
+           <h1>El Ayuntamiento de Murcia en crisis <span class="badge badge-secondary">
+               <a href="#" class="text-decoration-none text-white">Primicia</a></span>
+            </h1>
+            <button type="button" class="btn btn-warning">
+                Whatsapp<span class="badge badge-danger"> 5</span>
+            </button>
+       </div>
+
+       <!--Barras de progreso-->
+       <div class="progress" style="height: 60px">
+           <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%; height: 60px;">40%</div>
+       </div>
+<br>
+       <div class="progress">
+           <div class="progress-bar bg-primary" style="width: 40%;">Espacio libre - 40%</div>
+           <div class="progress-bar bg-dark" style="width: 25%;">Videos - 25%</div>
+           <div class="progress-bar bg-danger" style="width: 35%;">Fotografias - 35%</div>
+       </div>
+
+       <!--Paginación-->
+       <div class="container">
+           <ul class="pagination justify-content-center">
+               <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+               <li class="page-item"><a href="#" class="page-link">Página 2</a></li>
+               <li class="page-item"><a href="#" class="page-link">Página 3</a></li>
+               <li class="page-item active"><a href="#" class="page-link">Página 4</a></li>
+               <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+           </ul>
+       </div>
+
+       <div class="container">
+           <ul class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Fotos</a></li>
+               <li class="breadcrumb-item"><a href="#">Ibiza</a></li>
+           </ul>
+       </div>
+
+       <!--Grupos de Listas-->
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item active">Bandeja de entrada</li>
+            <li class="list-group-item">Enviados</li>
+            <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
+                SPAM<span class="badge badge-pill badge-secondary">10</span></li>
+        </ul>
+    </div>
+        <br>
+        <!--Tarjetas-->
+       <div class="card mx-auto" style="width: 25%;">
+           <img src="img/logo.png" alt="logo" class="card-img-top">
+           <div class="card-body"></div>
+                <h4 class="card-title">Empleado del mes</h4>
+                <p class="card-text">Al empleado que mas trabaja y no pide subida salarial</p>
+                <a href="#" class="card-link btn btn-primary stretched-link" role="button">Perfil</a>
+       </div>
+       <br>
+        <!--Columnas de tarjetas-->
+       <div class="card-deck">
+           <div class="card bg-success">
+               <div class="card-body">
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                       Aperiam dolorem ea ipsa laborum quasi id optio soluta, 
+                       perferendis ut error ex culpa necessitatibus explicabo provident, in quas ipsam, 
+                       consequatur aspernatur?</p>
+               </div>
+           </div>
+           <div class="card bg-warning">
+            <div class="card-body">
+                <p class="card-text">Segunda tarjeta</p>
+            </div>
+        </div>
+        <div class="card bg-primary">
+            <div class="card-body">
+                <p class="card-text">Tercera tarjeta</p>
+            </div>
+        </div>
+       </div>
+       <!--Menus desplegables extension-->
+       <div class="dropdown">
+           <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Archivo Municipal de Copia y Pega</button>
+           <div class="dropdown-menu dropdown-menu-right">
+               <div class="dropdown-header">Funciones basicas</div>
+               <a href="#" class="dropdown-item active">Nuevo</a>
+               <a href="#" class="dropdown-item disabled">Abrir</a>
+               <a href="#" class="dropdown-item">Salir</a>
+               <div class="dropdown-divider"></div>
+               <a href="#" class="dropdown-item">Cerrar</a>
+            </div>
+       </div>
+       <!--Texto plegable-->
+       <div class="container">
+           <h2>Texto que aparece y desaparece</h2>
+           <button type="button" class="btn-primary" data-toggle="collapse" data-target="#texto">Mostrar</button>
+           <div id="texto" class="collapse show">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Ipsam exercitationem quos, explicabo ab dignissimos amet distinctio quidem, 
+               animi neque accusamus nisi optio architecto dolorum sint omnis ducimus illo praesentium cumque?</div>
+       </div>
+       <br>
+
+       <div class="container">
+           <h2>Preguntas frecuentes</h2>
+           <div id="accordion">
+               <div class="card">
+                   <div class="card-header">
+                       <a href="#pregunta1" class="card-link" data-toggle="collapse">Pregunta 1</a>
+                    </div>
+                   <div class="collapse" id="pregunta1" data-parent="#accordion">
+                       <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Molestiae voluptatibus veritatis, libero soluta quas labore at provident 
+                            velit dolorum dolorem mollitia a corrupti ducimus repudiandae, 
+                            nesciunt natus perferendis quam blanditiis.
+                       </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-header">
+                       <a href="#pregunta2" class="card-link" data-toggle="collapse">Pregunta 2</a>
+                    </div>
+                   <div class="collapse" id="pregunta2" data-parent="#accordion">
+                       <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Incidunt perferendis harum rem placeat similique qui sequi, 
+                            saepe illo quod impedit? Suscipit eum dolor alias voluptatibus, 
+                            quo consectetur ratione quae hic!
+                       </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-header">
+                       <a href="#pregunta3" class="card-link" data-toggle="collapse">Pregunta 3</a>
+                    </div>
+                   <div class="collapse" id="pregunta3" data-parent="#accordion">
+                       <div class="card-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Aspernatur quam labore, nemo quibusdam laudantium ab unde nihil deleniti quos, 
+                            hic sequi assumenda, tempora accusantium. Perspiciatis voluptas explicabo quia facere error.
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--Barra de navegación-->
+       <div class="container">
+           <ul class="nav nav-pills nav-justified">
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Inicio</a>
+                </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link active">Contacto</a>
+                </li>
+               <li class="nav-item dropdown">
+                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Acerca de</a>
+                   <div class="dropdown-menu">
+                       <a href="#" class="dropdwon-item">Quien soy</a>
+                       <a href="#" class="dropdwon-item">Que hago</a>
+                    </div>
+                </li>
+           </ul>
+       </div>
+           <!--Pestañas dinámicas-->
+           <div class="container">
+               <ul class=" nav nav-tabs">
+                <li class="nav-item">
+                   <a href="#inicio" class="nav-link active" data-toggle="tab">Inicio</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#contacto" class="nav-link" data-toggle="tab">Contacto</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#acerca" class="nav-link" data-toggle="tab">Acerca</a>
+                </li>
+                </ul>
+           </div>
+           <div class="tab-content">
+                <div class="tab-pane container active" id="inicio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ex quo reiciendis facilis, nemo illo quae pariatur! 
+                    Ducimus consectetur voluptatum nihil nulla, 
+                    minus tenetur nostrum eum repellat voluptates ipsam culpa ad.
+                </div>
+                <div class="tab-pane container active" id="contacto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Mollitia quasi architecto optio autem ducimus, 
+                    iusto expedita dignissimos accusantium facere magnam dolor, 
+                    animi, perferendis nihil neque enim qui sint voluptatum excepturi.
+                </div>
+                <div class="tab-pane container active" id="acerca">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Facere ipsa delectus voluptatum error exercitationem amet 
+                    corrupti animi dolor laudantium quos est culpa, nam libero 
+                    cumque fugit a, consectetur, sed debitis!
+                </div>
+           </div>
+       </div>
+    <br>
+       <nav class="navbar navbar-expand-sm bg-dark">
+           <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a href="#" class="navbar-brand">
+                       <img src="img/logo.png" alt="contacto" style="width: 40px;">
+                   </a>
+                </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link text-white">Peliculas</a>
+                </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link text-white">Series</a>
+                </li>
+           </ul>
+       </nav>
+
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+           <a class="navbar-brand" href="#">
+               <img src="img/logo.png" alt="contacto" style="width: 40px;">
+           </a>
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="menu">
+               <ul class="navbar-nav">
+                   <li class="nav-item">
+                       <a href="#" class="nav-link">Nombre</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link">Apellidos</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link">Dirección</a>
+                   </li>
+               </ul>
+               <span class="navbar-text">Nuestra barra de navegación</span>
+           </div>
+           <form class="form-inline" action="#">
+               <input class="form-control mr-sm-2" type="search" placeholder="Busqueda">
+               <button class="btn btn-success" type="submit">Enviar</button>
+               <div class="input-group">
+                   <div class="input-group-apend">
+                       <span class="input-group-text">Nombre</span>
+                   </div>
+                   <input type="text" class="form-control" placeholder="Nombre de usuario">
+               </div>
+           </form>
+       </nav>
+       <br>
+       <!--Formulario-->
+       <form action="#" method="POST" class="form-inline">
+           <div class="form-group">
+               <label for="nombre" class="mr-2 ml-2">Nombre: </label>
+               <input type="text" id="nombre" name="nombre" class="form-control">
+               <label for="apellidos" class="mr-2 ml-2">Apellidos: </label>
+               <input type="text" id="apellidos" name="apellidos" class="form-control">
+               <div class="form-check">
+                   <label class="form-check-label">
+                       <input class="form-check-input ml-2" type="checkbox"> Verificar
+                   </label>
+               </div>
+           </div>
+       </form>
+       <br>
+       <form>
+           <div class="row">
+               <div class="col">
+                   <input type="email" class="form-control" placeholder="Correo">
+               </div>
+               <div class="col">
+                   <input type="search" class="form-control" placeholder="Buscar">
+               </div>
+           </div>
+       </form>
+
+       <!--Validaciones-->
+       <form action="#" method="POST" class="was-validated">
+           <div class="form-group">
+                <label form="user">Usuario: </label>
+                <input type="text" id="user" class="form-control" 
+                placeholder="Usuario" name="user" required>
+           </div>
+           <div class="form-group">
+               <label form="password">Contraseña: </label>
+               <input type="password" id="password" class="form-control" 
+               placeholder="Contraseña" name="password" required>
+               <div class="valid-feedback">Correcto</div>
+               <div class="invalid-feedback">Incorrecto</div>
+           </div>
+           <button type="submit" class="btn btn-primary">Enviar</button>
+       </form>
+
+       <form action="#" method="POST">
+           <div class="form-group">
+               <input type="range" class="form-control-range" step="0.5" min="0" max="5">
+           </div>
+           <div class="form-group">
+               <input type="file" class="form-control-file">
+           </div>
+       </form>
+       <!--Agrupación de etiqueta input-->
+       <form class="form-inline">
+           <div class="form-group input-group-sm">
+               <div="input-group-prepend">
+                   <span class="input-group-text">@</span>
+               </div>
+               <input type="text" class="form-control" placeholder="Nombre de usuario">
+           </div>
+           <div class="form-group input-group-lg">
+               <input type="email" class="form-control ml-2" placeholder="Correo">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">@dondeestawally.org</span>
+                </div>
+           </div>
+       </form>
+
+       <form class="form-inline">
+            <div class="form-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Persona</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+            <div class="input-group ml-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">*</span>
+                    <span class="input-group-text">#</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Codigo Postal">
+            </div>
+       </form>
+       <br>
+       <form>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio">
+                    </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Otras opciones">
+            </div>
+       </form>
+       <br>
+       <form>
+           <div class="input-group">
+               <div class="input-group-prepend">
+                   <button type="button" class="btn btn-primary">Enviar</button>
+               </div>
+               <input type="tel" class="form-control" placeholder="Telefono">
+           </div>
+            <div class="input-group">
+                <input type="search" placeholder="Buscar en casa">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-success">Ir</button>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Desplegable</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Opcion 1</a>
+                        <a href="#" class="dropdown-item">Opcion 2</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Sugerencias">
+            </div>
+       </form>
+       <!--Customizar formularios-->
+       <form>
+           <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="verificar">
+                <label for="verificar" class="custom-control-label">Bootstrap</label>
+           </div>
+           <input type="checkbox" id="defecto">
+           <label for="defecto">HTML5</label>
+       </form>
+       <!--Menú personalizado-->
+       <form>
+           <select class="custom-select">
+               <option select>Menu</option>
+               <option value="pizza">Pizza</option>
+               <option value="kebap">Kebap</option>
+               <option value="pandegamba">Pan de Gamba</option>
+           </select>
+           <select>
+            <option select>Menu</option>
+            <option value="pizza">Pizza</option>
+            <option value="kebap">Kebap</option>
+            <option value="pandegamba">Pan de Gamba</option>
+        </select>
+       </form>
+       <!--Rango-->
+       <form>
+           <label for="brillo"></label>
+           <input type="range" id="brillo" class="custom-range">
+           <label for="defecto">HTML5</label>
+           <input type="range" id="defecto">
+       </form>
+       <!--Carousel de imagenes-->
+       <!--Div contenedor-->
+       <div id="demostracion" class="carousel slide" data-ride="carousel">
+            <!--Indicadores inferiores-->
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#demostracion" data-slide-to="0"></li>
+                <li data-target="#demostracion" data-slide-to="1"></li>
+                <li data-target="#demostracion" data-slide-to="2"></li>
+            </ul>
+            <!--Presentacion-->
+            <div class="carousel-inner">
+                <div class="active carousel-item">
+                    <img src="img/imagen1.jpg" alt="espacio1" width="100%">
+                    <div class="carousel-caption">
+                        <h3>Titulo</h3>
+                        <p>Texto de la descripción</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagen2.jpg" alt="espacio2" width="100%">
+                    <div class="carousel-caption">
+                        <h3>Titulo</h3>
+                        <p>Texto de la descripción</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagen3.jpg" alt="espacio3" width="100%">
+                    <div class="carousel-caption">
+                        <h3>Titulo</h3>
+                        <p>Texto de la descripción</p>
+                    </div>
+                </div>
+            </div>
+            <!--Controles de avanzar y retroceder-->
+            <a class="carousel-control-prev" href="#demostracion" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demostracion" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+       </div>
+       <!--Ventanas emergentes-->
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventana">Mostrar</button>
+       <!--Ventana-->
+       <div class="modal fade" id="ventana">
+           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm modal-lg">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h3>Visitante 1.000.000</h3>
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   </div>
+                   <div class="modal-body">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati aperiam neque animi necessitatibus, accusamus ipsum aliquam suscipit nesciunt maxime alias sit, harum mollitia et tenetur aspernatur est ratione quod!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut harum dolorum facilis nesciunt debitis et exercitationem architecto distinctio, fugiat voluptates, obcaecati ipsa cum veritatis voluptatem deserunt quidem impedit minus!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis temporibus quis culpa sunt a neque! Atque dolores corrupti, deleniti nihil ut asperiores laudantium rem. Distinctio error itaque expedita velit fugiat?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laboriosam eligendi, excepturi debitis error tempore veritatis ullam. Velit ipsum earum sunt nam expedita libero, unde quisquam veritatis saepe quidem officiis.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cumque, delectus dicta saepe aspernatur veniam voluptas cupiditate fuga nihil, deleniti mollitia corporis vel nostrum, sunt sint molestiae doloribus a quasi!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vitae architecto recusandae cum officiis eos vel? Iusto quae ullam laudantium mollitia a dicta impedit, atque, reprehenderit porro aut eaque. Consequatur?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati aperiam neque animi necessitatibus, accusamus ipsum aliquam suscipit nesciunt maxime alias sit, harum mollitia et tenetur aspernatur est ratione quod!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aut harum dolorum facilis nesciunt debitis et exercitationem architecto distinctio, fugiat voluptates, obcaecati ipsa cum veritatis voluptatem deserunt quidem impedit minus!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis temporibus quis culpa sunt a neque! Atque dolores corrupti, deleniti nihil ut asperiores laudantium rem. Distinctio error itaque expedita velit fugiat?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laboriosam eligendi, excepturi debitis error tempore veritatis ullam. Velit ipsum earum sunt nam expedita libero, unde quisquam veritatis saepe quidem officiis.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cumque, delectus dicta saepe aspernatur veniam voluptas cupiditate fuga nihil, deleniti mollitia corporis vel nostrum, sunt sint molestiae doloribus a quasi!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vitae architecto recusandae cum officiis eos vel? Iusto quae ullam laudantium mollitia a dicta impedit, atque, reprehenderit porro aut eaque. Consequatur?
+                        </p>
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <br>
+       <!--Aviso para Cookies-->
+       <div class="toast sticky-top" data-autohide="false" style="position: fixed; top: 35%; right: 35%;">
+           <div class="toast-header">
+               <h4 class="text-primary mr-auto">Aviso Cookies</h4>
+               <button type="button" class="close ml-2 mb-2" data-dismiss="toast">&times;</button>
+           </div>
+           <div class="toast-body">
+                <p>Si sigue navegando por este sitio web aceptas el uso de cookies</p>
+                <button type="button" class="btn btn-primary" data-dismiss="toast">Aceptar</button>
+           </div>
+       </div>
+       <script>
+           $(document).ready(function(){
+            $('.toast').toast('show');
+           });
+       </script>
+    </body>
+</html>
+
