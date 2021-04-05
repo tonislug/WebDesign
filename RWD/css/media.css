@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 4%;
+    width: 100%;
+}
+
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#nav .boton {
+    background-color: red;
+    margin-bottom: 1%;
+    padding: 4%;
+    text-align: center;
+}
+
+#nav .boton a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#section #article h1 {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+#section #article picture source {
+    width: 100%;
+}
+
+#section #article picture img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+#section #article p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#aside {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#aside a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#footer h1 {
+    font-size: 2em;
+}
+
+#footer p {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 449px) and (max-width: 799px) {
+    .col-t-1 { width: 8.33%; }
+    .col-t-2 { width: 16.66%; }
+    .col-t-3 { width: 25%; }
+    .col-t-4 { width: 33.33%; }
+    .col-t-5 { width: 41.66%; }
+    .col-t-6 { width: 50%; }
+    .col-t-7 { width: 58.33%; }
+    .col-t-8 { width: 66.66%; }
+    .col-t-9 { width: 75%; }
+    .col-t-10 { width: 83.33%; }
+    .col-t-11 { width: 91.66%; }
+    .col-t-12 { width: 100%; }
+
+    #nav .boton {
+        background-color: black;
+    }
+
+    #header {
+        background-color: red; 
+    }
+
+    #footer {
+        background-color: red;
+    }
+
+    #aside {
+        background-color: black;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+
+    #aside {
+        margin-top: 4%;
+    }
+
+    #nav .boton {
+        background-color: red;
+    }
+
+    #header {
+        background-color: black;
+    }
+
+    #footer {
+        background-color: black;
+    }
+
+    #aside {
+        background-color: red;
+    }
+}
+

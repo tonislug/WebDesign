@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 4%;
+}
+
+img {
+    width: 100%;
+}
+
+.boton {
+    background-color: red;
+    margin-bottom: 4%;
+    padding: 4%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    background-color: red;
+    color: white;
+    padding: 4%;
+    margin-top: 1%;
+    border-radius: 5px;
+} 
+
+#header h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#nav .boton a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#section #article h1 {
+    text-align: center;
+    font-size: 1.9em;
+}
+
+#section #article p {
+    text-align: center;
+    font-size: 1em;
+}
+
+#footer {
+    background-color: red;
+    border-radius: 5px;
+}
+
+#footer #informacion {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#footer #enlaces a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
