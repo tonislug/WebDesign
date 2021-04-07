@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Repaso - Bootstrap</title>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <div class="container mt-3">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top rounded">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg.png" alt="Logo">
+          </a>
+
+          <!-- Colapsar enlaces -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Enlaces -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            
+        </nav>
+        </div>
+
+        <div class="container mt-3">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicadores -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- Slider -->
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/la.jpg" alt="Los Angeles" class="w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/chicago.jpg" alt="Chicago" class="w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ny.jpg" alt="New York" class="w-100">
+              </div>
+            </div>
+          
+            <!-- Controles del Slider -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+            </div>
+          </div>
+    </body>
+</html>
+
